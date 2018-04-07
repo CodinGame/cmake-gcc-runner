@@ -10,4 +10,5 @@ if make > /tmp/compilation_logs 2>&1; then
 else
 	echo "TECHIO> redirect-streams \"Compilation logs\""
 	cat /tmp/compilation_logs
+	echo "TECHIO> success false"
 fi
