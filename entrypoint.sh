@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cd /project/target
 
 # Compile
