@@ -4,12 +4,12 @@ cd /project/target
 
 # Compile
 if make > /tmp/compilation_logs 2>&1; then
-	echo "CG> redirect-streams \"Test results\""
+	echo "TECHIO> redirect-streams \"Test results\""
 
 	# Execute test
 	"$@"
 else
-	echo "CG> redirect-streams \"Compilation logs\""
-
+	echo "TECHIO> redirect-streams \"Compilation logs\""
 	cat /tmp/compilation_logs
+	echo "TECHIO> success false"
 fi

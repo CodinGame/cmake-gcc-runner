@@ -1,4 +1,4 @@
-FROM gcc:7.1
+FROM gcc:7.3
 
 COPY entrypoint.sh /
 COPY build.sh /project/build
